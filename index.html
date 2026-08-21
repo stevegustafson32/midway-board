@@ -1,28 +1,215 @@
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Midway 2026 — Auction Board</title>
+<title>The Midway 2026 — Results & Settlement</title>
 <style>
 :root{--green:#1d4d33;--gold:#b08d3f;--paper:#faf7f0;--ink:#20241f;--stone:#d8d2c4}
 *{box-sizing:border-box;margin:0}
 body{font:15px/1.5 Georgia,'Times New Roman',serif;background:var(--paper);color:var(--ink);padding:24px 16px 60px}
-.wrap{max-width:900px;margin:0 auto}
+.wrap{max-width:980px;margin:0 auto}
 h1{font-size:34px;color:var(--green)}
 .sub{color:#6b6656;letter-spacing:.04em}
 .stat{display:flex;gap:28px;margin:18px 0 26px;flex-wrap:wrap}
 .stat div b{display:block;font-size:24px;color:var(--green)}
-h2{font-size:19px;color:var(--green);border-bottom:2px solid var(--gold);padding-bottom:4px;margin:26px 0 8px}
+.stat div{font-size:13px;color:#6b6656}
+h2{font-size:19px;color:var(--green);border-bottom:2px solid var(--gold);padding-bottom:4px;margin:28px 0 10px}
 table{width:100%;border-collapse:collapse;background:#fff}
 th{text-align:left;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:#7a7566;padding:7px 10px;border-bottom:2px solid var(--stone)}
-td{padding:7px 10px;border-bottom:1px solid #eee8db}
-td.r,th.r{text-align:right}
+td{padding:7px 10px;border-bottom:1px solid #eee8db;vertical-align:top}
+td.r,th.r{text-align:right;white-space:nowrap}
 .who{color:#7a7566;font-size:13px}
-.tag{display:inline-block;background:var(--green);color:#fff;font-size:11px;border-radius:4px;padding:1px 7px;margin-left:6px}
+.pos{color:var(--green);font-weight:bold}.neg{color:#b23b3b}
 tr.total td{font-weight:bold;border-top:2px solid var(--stone)}
-.note{color:#7a7566;font-size:13px;margin-top:6px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:4px 28px}
+.grid label{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:5px 0;border-bottom:1px solid #eee8db;font-size:14px}
+select{font:14px Georgia,serif;padding:5px 6px;border:1px solid var(--stone);border-radius:5px;background:#fff;max-width:240px}
+.note{color:#7a7566;font-size:13px;margin-top:8px}
+button{font:14px Georgia,serif;padding:6px 14px;border:1px solid var(--stone);border-radius:6px;background:#fff;cursor:pointer;margin-top:12px}
+@media(max-width:700px){.grid{grid-template-columns:1fr}}
+@media print{select,button{border:none;background:none}.note{display:none}}
 </style></head><body><div class="wrap">
 <h1>The Midway</h1>
-<div class="sub">2026 Member-Member · Brentwood CC · Calcutta board</div>
+<div class="sub">2026 Member-Member · Brentwood CC · Results &amp; settlement</div>
 <div class="stat">
-  <div><b>$55,000</b>Pot estimate</div>
-  <div><b>0 / 72</b>Teams sold</div>
-</div><h2>Flight 1 — McGavock</h2><table><tr><th>Team</th><th>Players</th><th class="r">Sold for</th><th>Buyer</th></tr><tr><td>Luke Massei/Zickler</td><td class="who">Luke Massei (4) · Zickler, David (-2)</td><td class="r">—</td><td></td></tr><tr><td>Herron/Clevenger</td><td class="who">Herron, Tom (0) · Clevenger, Ernest (5)</td><td class="r">—</td><td></td></tr><tr><td>Crider/Loudermilk II</td><td class="who">Crider, Steve (6) · Loudermilk II, Robert L. (0)</td><td class="r">—</td><td></td></tr><tr><td>Tackett/Stribling</td><td class="who">Tackett, Doug (5) · Stribling, Jake (3)</td><td class="r">—</td><td></td></tr><tr><td>Sams/England</td><td class="who">Sams, Eric (2) · England, Wyatt (6)</td><td class="r">—</td><td></td></tr><tr><td>Walsh/Brown</td><td class="who">Walsh, Chris (4) · Brown, Sam (5)</td><td class="r">—</td><td></td></tr></table><h2>Flight 2 — Hayes</h2><table><tr><th>Team</th><th>Players</th><th class="r">Sold for</th><th>Buyer</th></tr><tr><td>Purifoy/Graham</td><td class="who">Purifoy, Michael (6) · Graham, Tommy (4)</td><td class="r">—</td><td></td></tr><tr><td>Martin/Shomaker</td><td class="who">Martin, Jake (5) · Shomaker, Taylor (6)</td><td class="r">—</td><td></td></tr><tr><td>Wehby/Griggs</td><td class="who">Wehby, Bill (6) · Griggs, Carter (5)</td><td class="r">—</td><td></td></tr><tr><td>Reedy/Cole</td><td class="who">Reedy, James (5) · Cole, Evan (6)</td><td class="r">—</td><td></td></tr><tr><td>Walker/Jenkins</td><td class="who">Walker, Collin (6) · Jenkins, Zachary (6)</td><td class="r">—</td><td></td></tr><tr><td>Bauchiero/Shelton</td><td class="who">Bauchiero, Daniel (6) · Shelton, Brian (6)</td><td class="r">—</td><td></td></tr></table><h2>Flight 3 — Lysander</h2><table><tr><th>Team</th><th>Players</th><th class="r">Sold for</th><th>Buyer</th></tr><tr><td>Baldwin/Markham</td><td class="who">Baldwin, Chad (10) · Markham, John (3)</td><td class="r">—</td><td></td></tr><tr><td>Hart/Parker</td><td class="who">Hart, Chris (7) · Parker, Christopher (6)</td><td class="r">—</td><td></td></tr><tr><td>Stanley/Stanley</td><td class="who">Stanley, Craig (7) · Stanley, Gregg (7)</td><td class="r">—</td><td></td></tr><tr><td>Beasley/Kingman</td><td class="who">Beasley, Garrett (2) · Kingman, Brett (12)</td><td class="r">—</td><td></td></tr><tr><td>Shore/Miller</td><td class="who">Shore, Daniel (7) · Miller, Caudill (7)</td><td class="r">—</td><td></td></tr><tr><td>Hurd/Hurd</td><td class="who">Hurd, Zach (7) · Hurd, Jim (7)</td><td class="r">—</td><td></td></tr></table><h2>Flight 4 — Crockett</h2><table><tr><th>Team</th><th>Players</th><th class="r">Sold for</th><th>Buyer</th></tr><tr><td>Bauchiero/Halstead</td><td class="who">Bauchiero, Ryan (9) · Halstead, Richard (6)</td><td class="r">—</td><td></td></tr><tr><td>Wells/Peace</td><td class="who">Wells, Wayne (10) · Peace, Jarod (5)</td><td class="r">—</td><td></td></tr><tr><td>Hunt/Cooper</td><td class="who">Hunt, Cameron (4) · Cooper, Jordan (12)</td><td class="r">—</td><td></td></tr><tr><td>West/Gilbert</td><td class="who">West, Jared (5) · Gilbert, Zach (12)</td><td class="r">—</td><td></td></tr><tr><td>Tanksley/Sheehan</td><td class="who">Tanksley, Kirk (7) · Sheehan, Michael (10)</td><td class="r">—</td><td></td></tr><tr><td>McClimans/McClimans</td><td class="who">McClimans, Jason (8) · McClimans, Les (8)</td><td class="r">—</td><td></td></tr></table><h2>Flight 5 — Carnton</h2><table><tr><th>Team</th><th>Players</th><th class="r">Sold for</th><th>Buyer</th></tr><tr><td>McPherson/Roadman</td><td class="who">McPherson, Michael (8) · Roadman, Stephen (9)</td><td class="r">—</td><td></td></tr><tr><td>Mayfield/Martin</td><td class="who">Mayfield, William (4) · Martin, Max (14)</td><td class="r">—</td><td></td></tr><tr><td>Simmons/Skipper</td><td class="who">Simmons, Rob (7) · Skipper, Turner (11)</td><td class="r">—</td><td></td></tr><tr><td>Cash/Milano</td><td class="who">Cash, Brad (7) · Milano, Michael (11)</td><td class="r">—</td><td></td></tr><tr><td>Whitehead/Owen</td><td class="who">Whitehead, Joseph M. (9) · Owen, Chuck (9)</td><td class="r">—</td><td></td></tr><tr><td>Simpson/King</td><td class="who">Simpson, Jeff (9) · King, Michael (9)</td><td class="r">—</td><td></td></tr></table><h2>Flight 6 — Randal</h2><table><tr><th>Team</th><th>Players</th><th class="r">Sold for</th><th>Buyer</th></tr><tr><td>Smith/Leatherwood</td><td class="who">Smith, Damon (13) · Leatherwood, Chapin (6)</td><td class="r">—</td><td></td></tr><tr><td>Walters/Houston</td><td class="who">Walters, Travis (10) · Houston, Hugh (9)</td><td class="r">—</td><td></td></tr><tr><td>Kirchenbauer/Kirchenbauer</td><td class="who">Kirchenbauer, Mark (11) · Kirchenbauer, Bob (9)</td><td class="r">—</td><td></td></tr><tr><td>Beasley/Sneed</td><td class="who">Beasley, Bill (11) · Sneed, Todd (10)</td><td class="r">—</td><td></td></tr><tr><td>Mcknight/Patnaik</td><td class="who">Mcknight, Kevin (11) · Patnaik, Raj (10)</td><td class="r">—</td><td></td></tr><tr><td>Hunter/Sheehan</td><td class="who">Hunter, Trey (14) · Sheehan, Scott (8)</td><td class="r">—</td><td></td></tr></table><h2>Flight 7 — Smith</h2><table><tr><th>Team</th><th>Players</th><th class="r">Sold for</th><th>Buyer</th></tr><tr><td>Floyd/Turner</td><td class="who">Floyd, Harry (11) · Turner, Spencer (11)</td><td class="r">—</td><td></td></tr><tr><td>Allen/Skelly</td><td class="who">Allen, Rob (11) · Skelly, Christian (11)</td><td class="r">—</td><td></td></tr><tr><td>Sheehan/Durst</td><td class="who">Sheehan, Dan (13) · Durst, Frank (9)</td><td class="r">—</td><td></td></tr><tr><td>Witte/Shaw</td><td class="who">Witte, Kevin (12) · Shaw, Brian (10)</td><td class="r">—</td><td></td></tr><tr><td>Krikorian/Perna</td><td class="who">Krikorian, Rand (8) · Perna, Michael L. (14)</td><td class="r">—</td><td></td></tr><tr><td>VanDyke/Oliver</td><td class="who">VanDyke, Will (10) · Oliver, Brandon (13)</td><td class="r">—</td><td></td></tr></table><h2>Flight 8 — Gains</h2><table><tr><th>Team</th><th>Players</th><th class="r">Sold for</th><th>Buyer</th></tr><tr><td>Rivera/Sabia</td><td class="who">Rivera, Gaston (11) · Sabia, CJ (12)</td><td class="r">—</td><td></td></tr><tr><td>Gustafson/Clunan</td><td class="who">Gustafson, Steve (14) · Clunan, Kevin (10)</td><td class="r">—</td><td></td></tr><tr><td>Braswell/Fields</td><td class="who">Braswell, Patrick (9) · Fields, John (15)</td><td class="r">—</td><td></td></tr><tr><td>Morrow/Ohlweiler</td><td class="who">Morrow, Walker (15) · Ohlweiler, Chris (9)</td><td class="r">—</td><td></td></tr><tr><td>Holtschlag/Elkins</td><td class="who">Holtschlag, Jt (7) · Elkins, Stephen D. (17)</td><td class="r">—</td><td></td></tr><tr><td>Grizzle/Davis</td><td class="who">Grizzle, Steve (15) · Davis, Matt (10)</td><td class="r">—</td><td></td></tr></table><h2>Flight 9 — Harding</h2><table><tr><th>Team</th><th>Players</th><th class="r">Sold for</th><th>Buyer</th></tr><tr><td>Warren/Sumislawski</td><td class="who">Warren, Edwin J. (15) · Sumislawski, Joseph (10)</td><td class="r">—</td><td></td></tr><tr><td>Ford/Cole</td><td class="who">Ford, Scott (14) · Cole, Stephen (12)</td><td class="r">—</td><td></td></tr><tr><td>McCracken/Doyle</td><td class="who">McCracken, Patrick (16) · Doyle, Ryan (10)</td><td class="r">—</td><td></td></tr><tr><td>Clarke/Pickard</td><td class="who">Clarke, Gregory (18) · Pickard, Craig (8)</td><td class="r">—</td><td></td></tr><tr><td>Alger/Sanders</td><td class="who">Alger, Luke (13) · Sanders, Chris (13)</td><td class="r">—</td><td></td></tr><tr><td>Gray/Snider</td><td class="who">Gray, Bud (12) · Snider, Mike (15)</td><td class="r">—</td><td></td></tr></table><h2>Flight 10 — Spears</h2><table><tr><th>Team</th><th>Players</th><th class="r">Sold for</th><th>Buyer</th></tr><tr><td>Bosse/Gorman</td><td class="who">Bosse, Robert (14) · Gorman, Mark (14)</td><td class="r">—</td><td></td></tr><tr><td>Worthington/Montgomery</td><td class="who">Worthington, Richard (13) · Montgomery, Brad (15)</td><td class="r">—</td><td></td></tr><tr><td>Derringer/Derringer</td><td class="who">Derringer, Derrick (14) · Derringer, Dwight (14)</td><td class="r">—</td><td></td></tr><tr><td>Bakker/Mayfield</td><td class="who">Bakker, Derek (12) · Mayfield, James (17)</td><td class="r">—</td><td></td></tr><tr><td>Harezlak/Stephen Litchfield</td><td class="who">Harezlak, Daniel (12) · Stephen Litchfield (17)</td><td class="r">—</td><td></td></tr><tr><td>Niravong/McGruder II</td><td class="who">Niravong, Austin (13) · McGruder II, Jeff (17)</td><td class="r">—</td><td></td></tr></table><h2>Flight 11 — Bridgeman</h2><table><tr><th>Team</th><th>Players</th><th class="r">Sold for</th><th>Buyer</th></tr><tr><td>Favret/Simonetti</td><td class="who">Favret, Andre (13) · Simonetti, Tony (19)</td><td class="r">—</td><td></td></tr><tr><td>Pennington/Tashie</td><td class="who">Pennington, Parks (20) · Tashie, Tyler (12)</td><td class="r">—</td><td></td></tr><tr><td>Wooldridge/Johnson</td><td class="who">Wooldridge, Brian (20) · Johnson, Joe (12)</td><td class="r">—</td><td></td></tr><tr><td>Trull/Pierce</td><td class="who">Trull, Jeff (17) · Pierce, Tom (16)</td><td class="r">—</td><td></td></tr><tr><td>Armour/Eastman</td><td class="who">Armour, Daniel (12) · Eastman, Brig (22)</td><td class="r">—</td><td></td></tr><tr><td>Fuge/Bock IV</td><td class="who">Fuge, Brendan (20) · Bock IV, George (14)</td><td class="r">—</td><td></td></tr></table><h2>Flight 12 — Rokeby</h2><table><tr><th>Team</th><th>Players</th><th class="r">Sold for</th><th>Buyer</th></tr><tr><td>Ball/Young</td><td class="who">Ball, Hunter (19) · Young, Daniel (16)</td><td class="r">—</td><td></td></tr><tr><td>Meadows/Reynolds</td><td class="who">Meadows, Ryan (20) · Reynolds, Phillip (15)</td><td class="r">—</td><td></td></tr><tr><td>Mize/Tatum</td><td class="who">Mize, Phillip (18) · Tatum, Richard (18)</td><td class="r">—</td><td></td></tr><tr><td>Berger/Staut</td><td class="who">Berger, Mark (16) · Staut, Doug (24)</td><td class="r">—</td><td></td></tr><tr><td>Collignon Jr./Orr</td><td class="who">Collignon Jr., Joc (24) · Orr, Michael (16)</td><td class="r">—</td><td></td></tr><tr><td>Milhizer/Klein</td><td class="who">Milhizer, Bob (21) · Klein, Jared (24)</td><td class="r">—</td><td></td></tr></table><div class="note">Snapshot published from the auction board.</div></div></body></html>
+  <div><b id="potStat"></b>Pot — recorded sales</div>
+  <div><b id="soldStat"></b>Teams sold</div>
+</div>
+
+<h2>Enter results</h2>
+<div class="note">Pick the 12 flight winners, then the 4 wildcards (2 per half, most points
+without winning the flight), then the shootout order. Payouts and settlement update live.
+Shootout placers also keep their flight-winner share. Picks save on this device.</div>
+<div class="grid" id="fwGrid"></div>
+<div class="grid" id="wcGrid" style="margin-top:14px"></div>
+<div class="grid" id="topGrid" style="margin-top:14px"></div>
+<button id="clearBtn">Clear picks</button>
+
+<h2>Payouts — pay the team owners</h2>
+<div class="note">The shop pays each winning team's payout to the team's owner of record, in full.
+Buyback arrangements settle privately between owners and players.</div>
+<div id="settle"></div>
+
+<h2>Total bought by owner</h2>
+<div id="owners"></div>
+
+<h2>Board — every sale</h2>
+<div id="board"></div>
+<div class="note" id="stamp"></div>
+</div>
+<script>
+const D = {"pot": 55000, "saved": "2026-08-21T02:51:05.840Z", "config": {"flightWinner": 0.035, "wildcard": 0.025, "overall": [0.2, 0.11, 0.07, 0.05], "champFlightOther": 0.01}, "teams": [{"id": 5, "flight": 1, "flightName": "McGavock", "team": "Tackett/Stribling", "p1": "Tackett, Doug", "p2": "Stribling, Jake", "p1Ph": 5, "p2Ph": 3, "combinedPh": 8.0}, {"id": 2, "flight": 1, "flightName": "McGavock", "team": "Herron/Clevenger", "p1": "Herron, Tom", "p2": "Clevenger, Ernest", "p1Ph": 0, "p2Ph": 5, "combinedPh": 5.0}, {"id": 6, "flight": 1, "flightName": "McGavock", "team": "Walsh/Brown", "p1": "Walsh, Chris", "p2": "Brown, Sam", "p1Ph": 4, "p2Ph": 5, "combinedPh": 9.0}, {"id": 4, "flight": 1, "flightName": "McGavock", "team": "Sams/England", "p1": "Sams, Eric", "p2": "England, Wyatt", "p1Ph": 2, "p2Ph": 6, "combinedPh": 8.0}, {"id": 1, "flight": 1, "flightName": "McGavock", "team": "Luke Massei/Zickler", "p1": "Luke Massei", "p2": "Zickler, David", "p1Ph": 4, "p2Ph": -2, "combinedPh": 2.0}, {"id": 3, "flight": 1, "flightName": "McGavock", "team": "Crider/Loudermilk II", "p1": "Crider, Steve", "p2": "Loudermilk II, Robert L.", "p1Ph": 6, "p2Ph": 0, "combinedPh": 6.0}, {"id": 12, "flight": 2, "flightName": "Hayes", "team": "Walker/Jenkins", "p1": "Walker, Collin", "p2": "Jenkins, Zachary", "p1Ph": 6, "p2Ph": 6, "combinedPh": 12.0}, {"id": 8, "flight": 2, "flightName": "Hayes", "team": "Martin/Shomaker", "p1": "Martin, Jake", "p2": "Shomaker, Taylor", "p1Ph": 5, "p2Ph": 6, "combinedPh": 11.0}, {"id": 10, "flight": 2, "flightName": "Hayes", "team": "Wehby/Griggs", "p1": "Wehby, Bill", "p2": "Griggs, Carter", "p1Ph": 6, "p2Ph": 5, "combinedPh": 11.0}, {"id": 7, "flight": 2, "flightName": "Hayes", "team": "Purifoy/Graham", "p1": "Purifoy, Michael", "p2": "Graham, Tommy", "p1Ph": 6, "p2Ph": 4, "combinedPh": 10.0}, {"id": 9, "flight": 2, "flightName": "Hayes", "team": "Reedy/Cole", "p1": "Reedy, James", "p2": "Cole, Evan", "p1Ph": 5, "p2Ph": 6, "combinedPh": 11.0}, {"id": 11, "flight": 2, "flightName": "Hayes", "team": "Bauchiero/Shelton", "p1": "Bauchiero, Daniel", "p2": "Shelton, Brian", "p1Ph": 6, "p2Ph": 6, "combinedPh": 12.0}, {"id": 16, "flight": 3, "flightName": "Lysander", "team": "Beasley/Kingman", "p1": "Beasley, Garrett", "p2": "Kingman, Brett", "p1Ph": 2, "p2Ph": 12, "combinedPh": 14.0}, {"id": 13, "flight": 3, "flightName": "Lysander", "team": "Baldwin/Markham", "p1": "Baldwin, Chad", "p2": "Markham, John", "p1Ph": 10, "p2Ph": 3, "combinedPh": 13.0}, {"id": 18, "flight": 3, "flightName": "Lysander", "team": "Shore/Miller", "p1": "Shore, Daniel", "p2": "Miller, Caudill", "p1Ph": 7, "p2Ph": 7, "combinedPh": 14.0}, {"id": 15, "flight": 3, "flightName": "Lysander", "team": "Hart/Parker", "p1": "Hart, Chris", "p2": "Parker, Christopher", "p1Ph": 7, "p2Ph": 6, "combinedPh": 13.0}, {"id": 14, "flight": 3, "flightName": "Lysander", "team": "Stanley/Stanley", "p1": "Stanley, Craig", "p2": "Stanley, Gregg", "p1Ph": 7, "p2Ph": 7, "combinedPh": 13.0}, {"id": 17, "flight": 3, "flightName": "Lysander", "team": "Hurd/Hurd", "p1": "Hurd, Zach", "p2": "Hurd, Jim", "p1Ph": 7, "p2Ph": 7, "combinedPh": 14.0}, {"id": 22, "flight": 4, "flightName": "Crockett", "team": "West/Gilbert", "p1": "West, Jared", "p2": "Gilbert, Zach", "p1Ph": 5, "p2Ph": 12, "combinedPh": 17.0}, {"id": 21, "flight": 4, "flightName": "Crockett", "team": "Hunt/Cooper", "p1": "Hunt, Cameron", "p2": "Cooper, Jordan", "p1Ph": 4, "p2Ph": 12, "combinedPh": 16.0}, {"id": 20, "flight": 4, "flightName": "Crockett", "team": "Bauchiero/Halstead", "p1": "Bauchiero, Ryan", "p2": "Halstead, Richard", "p1Ph": 9, "p2Ph": 6, "combinedPh": 15.0}, {"id": 19, "flight": 4, "flightName": "Crockett", "team": "Wells/Peace", "p1": "Wells, Wayne", "p2": "Peace, Jarod", "p1Ph": 10, "p2Ph": 5, "combinedPh": 15.0}, {"id": 24, "flight": 4, "flightName": "Crockett", "team": "Tanksley/Sheehan", "p1": "Tanksley, Kirk", "p2": "Sheehan, Michael", "p1Ph": 7, "p2Ph": 10, "combinedPh": 17.0}, {"id": 23, "flight": 4, "flightName": "Crockett", "team": "McClimans/McClimans", "p1": "McClimans, Jason", "p2": "McClimans, Les", "p1Ph": 8, "p2Ph": 8, "combinedPh": 17.0}, {"id": 26, "flight": 5, "flightName": "Carnton", "team": "Mayfield/Martin", "p1": "Mayfield, William", "p2": "Martin, Max", "p1Ph": 4, "p2Ph": 14, "combinedPh": 18.0}, {"id": 27, "flight": 5, "flightName": "Carnton", "team": "Simmons/Skipper", "p1": "Simmons, Rob", "p2": "Skipper, Turner", "p1Ph": 7, "p2Ph": 11, "combinedPh": 18.0}, {"id": 28, "flight": 5, "flightName": "Carnton", "team": "Cash/Milano", "p1": "Cash, Brad", "p2": "Milano, Michael", "p1Ph": 7, "p2Ph": 11, "combinedPh": 18.0}, {"id": 30, "flight": 5, "flightName": "Carnton", "team": "Whitehead/Owen", "p1": "Whitehead, Joseph M.", "p2": "Owen, Chuck", "p1Ph": 9, "p2Ph": 9, "combinedPh": 18.0}, {"id": 25, "flight": 5, "flightName": "Carnton", "team": "McPherson/Roadman", "p1": "McPherson, Michael", "p2": "Roadman, Stephen", "p1Ph": 8, "p2Ph": 9, "combinedPh": 17.0}, {"id": 29, "flight": 5, "flightName": "Carnton", "team": "Simpson/King", "p1": "Simpson, Jeff", "p2": "King, Michael", "p1Ph": 9, "p2Ph": 9, "combinedPh": 18.0}, {"id": 31, "flight": 6, "flightName": "Randal", "team": "Smith/Leatherwood", "p1": "Smith, Damon", "p2": "Leatherwood, Chapin", "p1Ph": 13, "p2Ph": 6, "combinedPh": 19.0}, {"id": 34, "flight": 6, "flightName": "Randal", "team": "Beasley/Sneed", "p1": "Beasley, Bill", "p2": "Sneed, Todd", "p1Ph": 11, "p2Ph": 10, "combinedPh": 21.0}, {"id": 36, "flight": 6, "flightName": "Randal", "team": "Hunter/Sheehan", "p1": "Hunter, Trey", "p2": "Sheehan, Scott", "p1Ph": 14, "p2Ph": 8, "combinedPh": 22.0}, {"id": 35, "flight": 6, "flightName": "Randal", "team": "Mcknight/Patnaik", "p1": "Mcknight, Kevin", "p2": "Patnaik, Raj", "p1Ph": 11, "p2Ph": 10, "combinedPh": 21.0}, {"id": 33, "flight": 6, "flightName": "Randal", "team": "Kirchenbauer/Kirchenbauer", "p1": "Kirchenbauer, Mark", "p2": "Kirchenbauer, Bob", "p1Ph": 11, "p2Ph": 9, "combinedPh": 20.0}, {"id": 32, "flight": 6, "flightName": "Randal", "team": "Walters/Houston", "p1": "Walters, Travis", "p2": "Houston, Hugh", "p1Ph": 10, "p2Ph": 9, "combinedPh": 19.0}, {"id": 42, "flight": 7, "flightName": "Smith", "team": "VanDyke/Oliver", "p1": "VanDyke, Will", "p2": "Oliver, Brandon", "p1Ph": 10, "p2Ph": 13, "combinedPh": 23.0}, {"id": 41, "flight": 7, "flightName": "Smith", "team": "Floyd/Turner", "p1": "Floyd, Harry", "p2": "Turner, Spencer", "p1Ph": 11, "p2Ph": 11, "combinedPh": 22.0}, {"id": 40, "flight": 7, "flightName": "Smith", "team": "Allen/Skelly", "p1": "Allen, Rob", "p2": "Skelly, Christian", "p1Ph": 11, "p2Ph": 11, "combinedPh": 22.0}, {"id": 38, "flight": 7, "flightName": "Smith", "team": "Sheehan/Durst", "p1": "Sheehan, Dan", "p2": "Durst, Frank", "p1Ph": 13, "p2Ph": 9, "combinedPh": 22.0}, {"id": 39, "flight": 7, "flightName": "Smith", "team": "Witte/Shaw", "p1": "Witte, Kevin", "p2": "Shaw, Brian", "p1Ph": 12, "p2Ph": 10, "combinedPh": 22.0}, {"id": 37, "flight": 7, "flightName": "Smith", "team": "Krikorian/Perna", "p1": "Krikorian, Rand", "p2": "Perna, Michael L.", "p1Ph": 8, "p2Ph": 14, "combinedPh": 22.0}, {"id": 47, "flight": 8, "flightName": "Gains", "team": "Gustafson/Clunan", "p1": "Gustafson, Steve", "p2": "Clunan, Kevin", "p1Ph": 14, "p2Ph": 10, "combinedPh": 24.0}, {"id": 45, "flight": 8, "flightName": "Gains", "team": "Braswell/Fields", "p1": "Braswell, Patrick", "p2": "Fields, John", "p1Ph": 9, "p2Ph": 15, "combinedPh": 24.0}, {"id": 46, "flight": 8, "flightName": "Gains", "team": "Morrow/Ohlweiler", "p1": "Morrow, Walker", "p2": "Ohlweiler, Chris", "p1Ph": 15, "p2Ph": 9, "combinedPh": 24.0}, {"id": 44, "flight": 8, "flightName": "Gains", "team": "Holtschlag/Elkins", "p1": "Holtschlag, Jt", "p2": "Elkins, Stephen D.", "p1Ph": 7, "p2Ph": 17, "combinedPh": 24.0}, {"id": 48, "flight": 8, "flightName": "Gains", "team": "Grizzle/Davis", "p1": "Grizzle, Steve", "p2": "Davis, Matt", "p1Ph": 15, "p2Ph": 10, "combinedPh": 25.0}, {"id": 43, "flight": 8, "flightName": "Gains", "team": "Rivera/Sabia", "p1": "Rivera, Gaston", "p2": "Sabia, CJ", "p1Ph": 11, "p2Ph": 12, "combinedPh": 23.0}, {"id": 52, "flight": 9, "flightName": "Harding", "team": "Ford/Cole", "p1": "Ford, Scott", "p2": "Cole, Stephen", "p1Ph": 14, "p2Ph": 12, "combinedPh": 26.0}, {"id": 51, "flight": 9, "flightName": "Harding", "team": "McCracken/Doyle", "p1": "McCracken, Patrick", "p2": "Doyle, Ryan", "p1Ph": 16, "p2Ph": 10, "combinedPh": 26.0}, {"id": 54, "flight": 9, "flightName": "Harding", "team": "Gray/Snider", "p1": "Gray, Bud", "p2": "Snider, Mike", "p1Ph": 12, "p2Ph": 15, "combinedPh": 27.0}, {"id": 50, "flight": 9, "flightName": "Harding", "team": "Clarke/Pickard", "p1": "Clarke, Gregory", "p2": "Pickard, Craig", "p1Ph": 18, "p2Ph": 8, "combinedPh": 26.0}, {"id": 49, "flight": 9, "flightName": "Harding", "team": "Warren/Sumislawski", "p1": "Warren, Edwin J.", "p2": "Sumislawski, Joseph", "p1Ph": 15, "p2Ph": 10, "combinedPh": 25.0}, {"id": 53, "flight": 9, "flightName": "Harding", "team": "Alger/Sanders", "p1": "Alger, Luke", "p2": "Sanders, Chris", "p1Ph": 13, "p2Ph": 13, "combinedPh": 26.0}, {"id": 58, "flight": 10, "flightName": "Spears", "team": "Bakker/Mayfield", "p1": "Bakker, Derek", "p2": "Mayfield, James", "p1Ph": 12, "p2Ph": 17, "combinedPh": 29.0}, {"id": 57, "flight": 10, "flightName": "Spears", "team": "Bosse/Gorman", "p1": "Bosse, Robert", "p2": "Gorman, Mark", "p1Ph": 14, "p2Ph": 14, "combinedPh": 28.0}, {"id": 56, "flight": 10, "flightName": "Spears", "team": "Worthington/Montgomery", "p1": "Worthington, Richard", "p2": "Montgomery, Brad", "p1Ph": 13, "p2Ph": 15, "combinedPh": 28.0}, {"id": 60, "flight": 10, "flightName": "Spears", "team": "Niravong/McGruder II", "p1": "Niravong, Austin", "p2": "McGruder II, Jeff", "p1Ph": 13, "p2Ph": 17, "combinedPh": 30.0}, {"id": 59, "flight": 10, "flightName": "Spears", "team": "Harezlak/Stephen Litchfield", "p1": "Harezlak, Daniel", "p2": "Stephen Litchfield", "p1Ph": 12, "p2Ph": 17, "combinedPh": 29.0}, {"id": 55, "flight": 10, "flightName": "Spears", "team": "Derringer/Derringer", "p1": "Derringer, Derrick", "p2": "Derringer, Dwight", "p1Ph": 14, "p2Ph": 14, "combinedPh": 28.0}, {"id": 65, "flight": 11, "flightName": "Bridgeman", "team": "Armour/Eastman", "p1": "Armour, Daniel", "p2": "Eastman, Brig", "p1Ph": 12, "p2Ph": 22, "combinedPh": 34.0}, {"id": 63, "flight": 11, "flightName": "Bridgeman", "team": "Favret/Simonetti", "p1": "Favret, Andre", "p2": "Simonetti, Tony", "p1Ph": 13, "p2Ph": 19, "combinedPh": 32.0}, {"id": 61, "flight": 11, "flightName": "Bridgeman", "team": "Pennington/Tashie", "p1": "Pennington, Parks", "p2": "Tashie, Tyler", "p1Ph": 20, "p2Ph": 12, "combinedPh": 32.0}, {"id": 66, "flight": 11, "flightName": "Bridgeman", "team": "Fuge/Bock IV", "p1": "Fuge, Brendan", "p2": "Bock IV, George", "p1Ph": 20, "p2Ph": 14, "combinedPh": 34.0}, {"id": 62, "flight": 11, "flightName": "Bridgeman", "team": "Wooldridge/Johnson", "p1": "Wooldridge, Brian", "p2": "Johnson, Joe", "p1Ph": 20, "p2Ph": 12, "combinedPh": 32.0}, {"id": 64, "flight": 11, "flightName": "Bridgeman", "team": "Trull/Pierce", "p1": "Trull, Jeff", "p2": "Pierce, Tom", "p1Ph": 17, "p2Ph": 16, "combinedPh": 33.0}, {"id": 68, "flight": 12, "flightName": "Rokeby", "team": "Ball/Young", "p1": "Ball, Hunter", "p2": "Young, Daniel", "p1Ph": 19, "p2Ph": 16, "combinedPh": 35.0}, {"id": 71, "flight": 12, "flightName": "Rokeby", "team": "Berger/Staut", "p1": "Berger, Mark", "p2": "Staut, Doug", "p1Ph": 16, "p2Ph": 24, "combinedPh": 40.0}, {"id": 70, "flight": 12, "flightName": "Rokeby", "team": "Collignon Jr./Orr", "p1": "Collignon Jr., Joc", "p2": "Orr, Michael", "p1Ph": 24, "p2Ph": 16, "combinedPh": 40.0}, {"id": 69, "flight": 12, "flightName": "Rokeby", "team": "Mize/Tatum", "p1": "Mize, Phillip", "p2": "Tatum, Richard", "p1Ph": 18, "p2Ph": 18, "combinedPh": 36.0}, {"id": 67, "flight": 12, "flightName": "Rokeby", "team": "Meadows/Reynolds", "p1": "Meadows, Ryan", "p2": "Reynolds, Phillip", "p1Ph": 20, "p2Ph": 15, "combinedPh": 35.0}, {"id": 72, "flight": 12, "flightName": "Rokeby", "team": "Milhizer/Klein", "p1": "Milhizer, Bob", "p2": "Klein, Jared", "p1Ph": 21, "p2Ph": 24, "combinedPh": 45.0}], "sales": {"1": {"price": 1500, "buyer": "derringer"}, "2": {"price": 600, "buyer": "gustafson"}, "3": {"price": 850, "buyer": "Gorman"}, "4": {"price": 1000, "buyer": "pierce"}, "5": {"price": 1000, "buyer": "stribling"}, "6": {"price": 1100, "buyer": "derringer"}, "7": {"price": 500, "buyer": "walsh"}, "8": {"price": 800, "buyer": "stanley"}, "9": {"price": 1000, "buyer": "cole"}, "10": {"price": 1100, "buyer": "derringer"}, "11": {"price": 1050, "buyer": "floyd"}, "12": {"price": 1600, "buyer": "gustafson"}, "13": {"price": 700, "buyer": "gustafson"}, "14": {"price": 750, "buyer": "walsh"}, "15": {"price": 650, "buyer": "peace"}, "16": {"price": 1000, "buyer": "derringer"}, "17": {"price": 800, "buyer": "walsh"}, "18": {"price": 800, "buyer": "worthington"}, "19": {"price": 650, "buyer": "wells"}, "20": {"price": 750, "buyer": "patnaik"}, "21": {"price": 700, "buyer": "walker"}, "22": {"price": 1200, "buyer": "gustafson"}, "23": {"price": 1300, "buyer": "durst"}, "24": {"price": 500, "buyer": "brown"}, "25": {"price": 700, "buyer": "baldwin"}, "26": {"price": 1300, "buyer": "gustafson"}, "27": {"price": 700, "buyer": "derringer"}, "28": {"price": 1200, "buyer": "cash"}, "29": {"price": 400, "buyer": "walsh"}, "30": {"price": 600, "buyer": "ryan bauchiero"}, "31": {"price": 1100, "buyer": "Leatherwood"}, "32": {"price": 500, "buyer": "derringer"}, "33": {"price": 800, "buyer": "derringer"}, "34": {"price": 500, "buyer": "gustafson"}, "35": {"price": 1100, "buyer": "cash"}, "36": {"price": 500, "buyer": "Baldwin"}, "37": {"price": 400, "buyer": "gustafson"}, "38": {"price": 1700, "buyer": "durst"}, "39": {"price": 850, "buyer": "herzlak"}, "40": {"price": 500, "buyer": "brown"}, "41": {"price": 500, "buyer": "Turner"}, "42": {"price": 900, "buyer": "gustafson"}, "43": {"price": 1000, "buyer": "Derringer"}, "44": {"price": 750, "buyer": "Cooper"}, "45": {"price": 600, "buyer": "Favret"}, "46": {"price": 850, "buyer": "harzelak"}, "47": {"price": 1000, "buyer": "Pickard"}, "48": {"price": 400, "buyer": "gustafson"}, "49": {"price": 700, "buyer": "cooper"}, "50": {"price": 600, "buyer": "Favret"}, "51": {"price": 900, "buyer": "derringer"}, "52": {"price": 800, "buyer": "derringer"}, "53": {"price": 900, "buyer": "alger"}, "54": {"price": 600, "buyer": "gray"}, "55": {"price": 1000, "buyer": "derringer"}, "56": {"price": 600, "buyer": "worthington"}, "57": {"price": 700, "buyer": "gustafson"}, "58": {"price": 400, "buyer": "gustafson"}, "59": {"price": 800, "buyer": "harezlak"}, "60": {"price": 400, "buyer": "mcgruder??"}, "61": {"price": 400, "buyer": "pennington"}, "62": {"price": 400, "buyer": "brown"}, "63": {"price": 400, "buyer": "favret"}, "64": {"price": 400, "buyer": "derringer"}, "65": {"price": 600, "buyer": "gustafson"}, "66": {"price": 600, "buyer": "bock"}, "67": {"price": 400, "buyer": "reynolds"}, "68": {"price": 1300, "buyer": "young"}, "69": {"price": 600, "buyer": "derringer"}, "70": {"price": 400, "buyer": "collignon ??"}, "71": {"price": 500, "buyer": "gustafson"}, "72": {"price": 600, "buyer": "klein"}}};
+const money = n => '$' + Math.round(n).toLocaleString();
+const teams = {}; D.teams.forEach(t => teams[t.id] = t);
+const sales = D.sales;
+const soldTotal = Object.values(sales).reduce((a,s)=>a+(s.price||0),0);
+const POT = soldTotal > 0 ? soldTotal : D.pot;
+const PLACE = ['Champion','2nd place','3rd place','4th place'];
+const K = 'midway2026shop';
+let PICKS = {fw:{}, wc:['','','',''], top:['','','','']};
+try { const s = JSON.parse(localStorage.getItem(K)||'null'); if (s) PICKS = s; } catch(e){}
+
+document.getElementById('potStat').textContent = money(POT);
+document.getElementById('soldStat').textContent =
+  Object.values(sales).filter(s=>s.price).length + ' / ' + D.teams.length;
+
+const byFlight = {};
+D.teams.forEach(t => (byFlight[t.flight] ||= []).push(t));
+Object.values(byFlight).forEach(l => l.sort((a,b)=>a.combinedPh-b.combinedPh));
+
+const ownerKey = s => ((s&&s.buyer)||'').trim().toLowerCase() || '(unrecorded)';
+const ownerName = {};
+D.teams.forEach(t => { const s=sales[t.id]; const k=ownerKey(s);
+  if (!(k in ownerName) && s && s.buyer) ownerName[k]=s.buyer.trim();
+});
+ownerName['(unrecorded)'] = '(unrecorded buyer)';
+
+function opts(list, sel){
+  return '<option value=""></option>' + list.map(t =>
+    `<option value="${t.id}" ${String(sel)===String(t.id)?'selected':''}>F${t.flight} ${t.team}</option>`).join('');
+}
+function save(){ try{ localStorage.setItem(K, JSON.stringify(PICKS)); }catch(e){} }
+
+function computePayouts(){
+  const c = D.config, out = {};
+  const add = (id, amt, tag) => { if(!id) return; id=+id;
+    out[id] ||= {amount:0, tags:[]}; out[id].amount += amt; out[id].tags.push(tag); };
+  Object.values(PICKS.fw).forEach(id => add(id, c.flightWinner*POT, 'Flight winner'));
+  PICKS.wc.forEach(id => add(id, c.wildcard*POT, 'Wildcard'));
+  PICKS.top.forEach((id,k) => add(id, (c.overall[k]||0)*POT, PLACE[k]));
+  const champ = +PICKS.top[0];
+  if (champ) {
+    const cf = (teams[champ]||{}).flight;
+    D.teams.filter(t => t.flight===cf && t.id!==champ)
+      .forEach(t => add(t.id, (c.champFlightOther||0.01)*POT, 'Consolation'));
+  }
+  return out;
+}
+
+function render(){
+  // ---- pickers ----
+  let h = '';
+  for (const f of Object.keys(byFlight).sort((a,b)=>a-b)) {
+    const fl = byFlight[f];
+    h += `<label><span><b>F${f}</b> ${fl[0].flightName} winner</span>
+      <select data-k="fw" data-f="${f}">${opts(fl, PICKS.fw[f])}</select></label>`;
+  }
+  document.getElementById('fwGrid').innerHTML = h;
+
+  const fwIds = new Set(Object.values(PICKS.fw).filter(Boolean).map(Number));
+  const half = lohi => D.teams.filter(t => t.flight>=lohi[0] && t.flight<=lohi[1] && !fwIds.has(t.id));
+  h = '';
+  [[1,6],[1,6],[7,12],[7,12]].forEach((range,k) => {
+    h += `<label><span>Wildcard ${k+1} (F${range[0]}–F${range[1]})</span>
+      <select data-k="wc" data-i="${k}">${opts(half(range), PICKS.wc[k])}</select></label>`;
+  });
+  document.getElementById('wcGrid').innerHTML = h;
+
+  const qual = D.teams.filter(t => fwIds.has(t.id) ||
+    PICKS.wc.map(Number).includes(t.id));
+  h = '';
+  PLACE.forEach((p,k) => {
+    h += `<label><span>${p}</span>
+      <select data-k="top" data-i="${k}">${opts(qual.length?qual:D.teams, PICKS.top[k])}</select></label>`;
+  });
+  document.getElementById('topGrid').innerHTML = h;
+
+  // ---- settlement ----
+  const pay = computePayouts();
+  const byOwner = {};
+  D.teams.forEach(t => {
+    const s = sales[t.id]; if (!s || !s.price) return;
+    const k = ownerKey(s);
+    byOwner[k] ||= {paid:0, recv:0, n:0, wins:[]};
+    byOwner[k].paid += s.price; byOwner[k].n++;
+    if (pay[t.id]) { byOwner[k].recv += pay[t.id].amount;
+      byOwner[k].wins.push(t.team + ' — ' + pay[t.id].tags.join(', ') +
+        ' (' + money(pay[t.id].amount) + ')'); }
+  });
+  Object.keys(pay).forEach(id => {           // winners whose sale went unrecorded
+    const t = teams[id]; const s = sales[id];
+    if (!s || !s.price) {
+      byOwner['(unrecorded)'] ||= {paid:0, recv:0, n:0, wins:[]};
+      byOwner['(unrecorded)'].recv += pay[id].amount;
+      byOwner['(unrecorded)'].wins.push(t.team + ' — ' + pay[id].tags.join(', ') +
+        ' (' + money(pay[id].amount) + ')');
+    }
+  });
+
+  const winners = Object.entries(byOwner).filter(([,v]) => v.recv > 0)
+    .sort((a,b) => b[1].recv - a[1].recv);
+  if (!winners.length) {
+    document.getElementById('settle').innerHTML =
+      '<div class="note">Pick winners above — the payout table appears here.</div>';
+  } else {
+    let s = '<table><tr><th>Owner</th><th>Winning teams</th><th class="r">Receives</th></tr>';
+    let tot = 0;
+    winners.forEach(([k,v]) => { tot += v.recv;
+      s += `<tr><td><b>${ownerName[k]}</b></td><td class="who">${v.wins.join('<br>')}</td>
+        <td class="r pos">${money(v.recv)}</td></tr>`; });
+    s += `<tr class="total"><td>TOTAL</td><td></td><td class="r">${money(tot)}</td></tr></table>`;
+    document.getElementById('settle').innerHTML = s;
+  }
+
+  // ---- paid-in by owner ----
+  const owners = Object.entries(byOwner).sort((a,b)=>b[1].paid-a[1].paid);
+  let s = '<table><tr><th>Owner</th><th class="r">Teams</th><th class="r">Paid in</th>' +
+          '<th class="r">% of pot</th><th class="r">Receives</th><th class="r">Net</th></tr>';
+  let tp=0, tr2=0;
+  owners.forEach(([k,v]) => { tp+=v.paid; tr2+=v.recv;
+    const net = v.recv - v.paid;
+    s += `<tr><td>${ownerName[k]}</td><td class="r">${v.n}</td><td class="r">${money(v.paid)}</td>
+      <td class="r">${(100*v.paid/POT).toFixed(1)}%</td>
+      <td class="r">${v.recv?money(v.recv):'$0'}</td>
+      <td class="r ${net>=0?'pos':'neg'}">${net<0?'−':''}${money(Math.abs(net))}</td></tr>`; });
+  s += `<tr class="total"><td>TOTAL</td><td></td><td class="r">${money(tp)}</td><td></td>
+    <td class="r">${money(tr2)}</td><td></td></tr></table>`;
+  document.getElementById('owners').innerHTML = s;
+
+  // ---- board ----
+  s = '';
+  for (const f of Object.keys(byFlight).sort((a,b)=>a-b)) {
+    const fl = byFlight[f];
+    s += `<h2 style="font-size:16px">Flight ${f} — ${fl[0].flightName}</h2>
+      <table><tr><th>Team</th><th>Players</th><th class="r">Sold for</th><th>Buyer</th></tr>`;
+    fl.forEach(t => { const sa = sales[t.id]||{};
+      s += `<tr><td>${t.team}</td><td class="who">${t.p1} (${t.p1Ph}) · ${t.p2} (${t.p2Ph})</td>
+        <td class="r">${sa.price?money(sa.price):'—'}</td><td>${sa.buyer||''}</td></tr>`; });
+    s += '</table>';
+  }
+  document.getElementById('board').innerHTML = s;
+  document.getElementById('stamp').textContent =
+    'Sales snapshot published from the auction board' + (D.saved ? ' · ' + D.saved : '') + '.';
+}
+
+document.addEventListener('change', e => {
+  const el = e.target; if (!el.dataset.k) return;
+  if (el.dataset.k === 'fw') PICKS.fw[el.dataset.f] = el.value;
+  if (el.dataset.k === 'wc') PICKS.wc[+el.dataset.i] = el.value;
+  if (el.dataset.k === 'top') PICKS.top[+el.dataset.i] = el.value;
+  save(); render();
+});
+document.getElementById('clearBtn').onclick = () => {
+  if (!confirm('Clear all picked winners?')) return;
+  PICKS = {fw:{}, wc:['','','',''], top:['','','','']}; save(); render();
+};
+render();
+</script></body></html>
