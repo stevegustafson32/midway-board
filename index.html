@@ -34,6 +34,9 @@ button{font:14px Georgia,serif;padding:6px 14px;border:1px solid var(--stone);bo
   <div><b id="soldStat"></b>Teams sold</div>
 </div>
 
+<h2>Payout schedule</h2>
+<div id="sched"></div>
+
 <h2>Enter results</h2>
 <div class="note">Pick the 12 flight winners, then the 4 wildcards (2 per half, most points
 without winning the flight), then the shootout order. Payouts and settlement update live.
@@ -104,7 +107,22 @@ function computePayouts(){
   return out;
 }
 
+function renderSchedule(){
+  const c = D.config, row = (lab, pct, n) =>
+    `<tr><td>${lab}</td><td class="r">${(pct*100).toFixed(1)}%</td><td class="r"><b>${money(pct*POT)}</b>${n?' <span class="who">each</span>':''}</td></tr>`;
+  let s = '<table><tr><th>Prize</th><th class="r">% of pot</th><th class="r">Pays</th></tr>';
+  s += row('Overall Champions', c.overall[0]) + row('2nd place in shootout', c.overall[1]) +
+       row('3rd place in shootout', c.overall[2]) + row('4th place in shootout', c.overall[3]) +
+       row('Each flight winner (12)', c.flightWinner, 1) + row('Wild card winners (4)', c.wildcard, 1) +
+       row("All other teams in the Overall Champions' flight (5)", c.champFlightOther||0.01, 1);
+  const tot = c.overall.reduce((a,b)=>a+b,0) + 12*c.flightWinner + 4*c.wildcard + 5*(c.champFlightOther||0.01);
+  s += `<tr class="total"><td>Total distributed</td><td class="r">${(tot*100).toFixed(0)}%</td><td class="r">${money(tot*POT)}</td></tr></table>
+    <div class="note">Shootout placers also keep their flight-winner share, so the Overall Champions collect ${money((c.overall[0]+c.flightWinner)*POT)} in total.</div>`;
+  document.getElementById('sched').innerHTML = s;
+}
+
 function render(){
+  renderSchedule();
   // ---- pickers ----
   let h = '';
   for (const f of Object.keys(byFlight).sort((a,b)=>a-b)) {
