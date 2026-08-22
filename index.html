@@ -50,7 +50,7 @@ Shootout placers also keep their flight-winner share. Picks save on this device.
 
 <h2>Payouts — pay the team owners</h2>
 <div class="note">The shop pays each winning team's payout to the team's owner of record, in full.
-Buyback arrangements settle privately between owners and players.</div>
+Buyback arrangements settle privately between owners and players. If an unsold team wins anything, that payout goes to the pro shop.</div>
 <div id="settle"></div>
 
 <h2>Total bought by owner</h2>
@@ -88,7 +88,7 @@ const ownerName = {};
 D.teams.forEach(t => { const s=sales[t.id]; const k=ownerKey(s);
   if (!(k in ownerName) && s && s.buyer) ownerName[k]=s.buyer.trim();
 });
-ownerName['(unrecorded)'] = '(unrecorded buyer)';
+ownerName['(unrecorded)'] = 'Pro shop (unsold team)';
 
 function opts(list, sel){
   return '<option value=""></option>' + list.map(t =>
